@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<libreria>
+<libro>
+
+    <titulo>Aventura en el amazonas</titulo>
+    <autor>David Calderón Navarro</autor>
+    <año>2025</año>
+    <genero>Aventura</genero>
+
+</libro>
+<libro>
+
+    <titulo>La chica del tren</titulo>
+    <autor>Paula Hawkins</autor>
+    <año>2016</año>
+    <genero>Aventura</genero>
+
+</libro>
+<libro>
+
+    <titulo>El laberinto encantado</titulo>
+    <autor>David Calderón Navarro</autor>
+    <año>2020</año>
+    <genero>Miedo</genero>
+</libro>
+
+</libreria>
