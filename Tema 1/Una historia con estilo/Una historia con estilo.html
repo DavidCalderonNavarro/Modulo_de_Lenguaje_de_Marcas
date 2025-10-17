@@ -5,19 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Una historia con estilo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=BBH+Sans+Hegarty&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=BBH+Sans+Hegarty&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
     <style>
         body {
-
-            background: linear-gradient(20deg, rgb(30, 224, 4), green);
             text-align: center;
 
+            background:
+                url('bin/barril.png'),
+                url('bin/barril.png'),
+                linear-gradient(70deg, rgb(30, 240, 3), rgb(3, 94, 3));
+
+            background-repeat: repeat-y, repeat-y, repeat-y;
+            background-position: left, right, center;
+            background-size: 200px auto, 200px auto, cover;
+            background-attachment: fixed, fixed;
         }
 
         img {
 
             margin: 20px;
-            width: 500px;
-            height: 700px;
+            width: 400px;
+            height: 600px;
+            border-radius: 30px;
+
+        }
+
+        h1 {
+
+            font-size: xx-large;
+            font-style: italic;
+            font-family: 'BBH Sans Hegarty', sans-serif;
+            text-align: center;
+            color: azure;
+            text-decoration: underline;
+
+
+        }
+
+        h2 {
+
+            font-size: x-large;
+            font-family: "BBH Sans Hegarty", sans-serif;
+            margin-left: 400px;
+            margin-right: 400px;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            background-color: rgb(3, 224, 231);
+            color: rgb(0, 0, 0);
+            border-radius: 30px;
+
+        }
+
+        h3 {
+
+            font-size: x-large;
+            font-family: "BBH Sans Hegarty", sans-serif;
+            margin-left: 400px;
+            margin-right: 400px;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            background-color: rgb(14, 0, 212);
+            color: rgb(0, 236, 253);
+            border-radius: 30px;
 
         }
 
@@ -26,6 +88,8 @@
             text-align: left;
             margin-left: 10px;
             margin-right: 10px;
+            font-size: small;
+            font-family: "BBH Sans Hegarty", sans-serif;
 
         }
 
@@ -34,7 +98,50 @@
 
             padding-top: 100px;
             padding-bottom: 100px;
-            
+            margin-top: 20px;
+
+        }
+
+        .volver-arriba {
+
+
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: rgb(9, 201, 83);
+            color: white;
+            font-family: 'BBH Sans Hegarty', sans-serif;
+            font-size: x-large;
+            border: none;
+            border-radius: 15px;
+            text-decoration: none;
+
+
+        }
+        .siguiente{
+
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: rgb(9, 201, 83);
+            color: rgb(255, 255, 255);
+            font-family: 'BBH Sans Hegarty', sans-serif;
+            font-size: x-large;
+            border: none;
+            border-radius: 15px;
+            text-decoration: none;
+
+        }
+        .indice{
+
+            padding: 10px 20px;
+            margin: 20px;
+            background-color: rgb(3, 48, 247);
+            color: rgb(0, 236, 253);
+            font-family: 'BBH Sans Hegarty', sans-serif;
+            font-size: x-large;
+            border: none;
+            border-radius: 15px;
+            text-decoration: none;
+
         }
     </style>
 
@@ -46,14 +153,13 @@
 
     <h1>El Duende que Soñaba con ser Rey</h1>
     <img src="bin/duenderey.png">
-    <h3>Índice:</h3>
-    <a href="#cap1">Introducción</a><br>
-    <a href="#cap2">Nudo</a><br>
-    <a href="#cap3">Desenlace</a><br>
+    <h3>Indice:</h3>
+    <a href="#cap1" class="indice">Introduccion</a>
+    <a href="#cap2" class="indice">Nudo</a>
+    <a href="#cap3" class="indice">Desenlace</a>
     <br><br>
-    <div
-        style="margin-left: 400px; margin-right: 400px;padding-bottom: 10px; padding-top: 10px; background-color: black; color: azure;">
-        <h2 id="cap1">Introducción</h2>
+    <div style="padding-top: 10px; padding-bottom: 10px;">
+        <h2 id="cap1">Introduccion</h2>
     </div>
     <div style="display: flex; margin-left: 400px; margin-right: 400px;">
 
@@ -61,61 +167,66 @@
         <div>
 
             <p>En la Arena de Clash Royale, los duendes eran conocidos por su velocidad, su risa burlona y sus dagas
-                afiladas. Siempre corrían hacia la batalla primero, sabiendo que probablemente serían los primeros en
+                afiladas. Siempre corrian hacia la batalla primero, sabiendo que probablemente serian los primeros en
                 caer.
-                <br><br>Entre ellos vivía Grin, un duende distinto a los demás. Mientras sus compañeros competían por
-                quién robaba más oro o quién lanzaba la daga más lejos, Grin pasaba las noches observando al Rey Azul
+                <br><br>Entre ellos vivia Grin, un duende distinto a los demas. Mientras sus compañeros competian por
+                quien robaba mas oro o quien lanzaba la daga mas lejos, Grin pasaba las noches observando al Rey Azul
                 desde las sombras del campo de batalla.
                 <br><br>
 
-            <p style="margin-left: 20px;">—Algún día, yo también tendré una corona —susurraba mientras afilaba sus
+            <p style="margin-left: 20px;">—Algun dia, yo tambien tendre una corona —susurraba mientras afilaba sus
                 cuchillos.</p>
 
-            <p>Pero los otros duendes se reían de él.</p>
+            <p>Pero los otros duendes se reian de el.</p>
             <br>
-            <p style="margin-left: 20px; text-align: left;">—¡Un duende rey! ¡Eso sí que es gracioso! —decían entre
+            <p style="margin-left: 20px; text-align: left;">—¡Un duende rey! ¡Eso si que es gracioso! —decian entre
                 carcajadas.</p>
-            <p>Grin no respondía. Cada noche, mientras los demás dormían en sus barriles vacíos, él entrenaba.
+            <p>Grin no respondia. Cada noche, mientras los demas dormian en sus barriles vacios, el entrenaba.
                 <br><br>Saltaba troncos, esquivaba flechas, e incluso practicaba su saludo real frente a un espejo roto.
-                En el fondo, sabía que algún día demostraría que incluso un duende podía ser más que una distracción en
+                En el fondo, sabia que algún dia demostraria que incluso un duende podia ser más que una distracción en
                 la arena.
-                <br><br><br>
-                <a href="#inicio">Voler arriba</a>
-
             </p>
+            <br><br><br>
+            <a href="#cap2" class="siguiente">Siguiente</a>
+            <br><br><br>
+            <a href="#inicio" class="volver-arriba">Volver arriba</a>
             </p>
 
         </div>
     </div>
-    <div style="margin-left: 400px; margin-right: 400px;padding-bottom: 10px; padding-top: 10px; background-color: black; color: azure;">
+    <div style="padding-top: 10px; padding-bottom: 10px;">
         <h2 id="cap2">Nudo</h2>
     </div>
     <div style="display: flex; margin-left: 400px; margin-right: 400px;">
 
         <div>
 
-            <p>Una mañana, el cuerno de guerra sonó con fuerza: comenzaba una gran batalla. La Arena estaba llena de
-                energía; los gritos de los soldados retumbaban entre las torres. El Rey Rojo lanzaba tropas una tras
+            <p>Una mañana, el cuerno de guerra sono con fuerza: comenzaba una gran batalla. La Arena estaba llena de
+                energia; los gritos de los soldados retumbaban entre las torres. El Rey Rojo lanzaba tropas una tras
                 otra, decidido a destruirlo todo.
-                <br><br>El equipo de Grin parecía perdido. Los gigantes golpeaban sin descanso, los magos lanzaban fuego desde
+                <br><br>El equipo de Grin parecía perdido. Los gigantes golpeaban sin descanso, los magos lanzaban fuego
+                desde
                 las esquinas y los barriles de duendes eran destruidos antes de aterrizar.
 
-                <br><br>Entonces, algo cambió. Un rayo cayó sobre el campo y, entre el humo, Grin vio la corona del Rey Rojo
+                <br><br>Entonces, algo cambio. Un rayo cayó sobre el campo y, entre el humo, Grin vio la corona del Rey
+                Rojo
                 rodar hasta sus pies.
-                <br><br>Por un momento, el tiempo pareció detenerse.
-            <p style="margin-left: 20px;">—Este… es mi momento —murmuró.</p>
+                <br><br>Por un momento, el tiempo parecio detenerse.
+            <p style="margin-left: 20px;">—Este… es mi momento —murmuro.</p>
 
-            Con un salto ágil, el pequeño duende tomó la corona, la levantó sobre su cabeza y, con una sonrisa
-            desafiante, gritó:
+            <p>>Con un salto agil, el pequeño duende tomo la corona, la levanto sobre su cabeza y, con una sonrisa
+                desafiante, grito:</p>
 
             <p style="margin-left: 20px;">“¡Por todos los duendes olvidados en el campo de batalla!”</p>
 
-            <p>Las arqueras, caballeros y hasta los esqueletos lo miraron sorprendidos. El Rey Rojo se levantó furioso,
-            pero antes de poder dar una orden, el público comenzó a aplaudir.
-            Nunca antes un duende había hecho algo tan valiente… ni tan loco.
-            <br><br><br>
-            <a href="#inicio">Voler arriba</a>
+            <p>Las arqueras, caballeros y hasta los esqueletos lo miraron sorprendidos. El Rey Rojo se levanto furioso,
+                pero antes de poder dar una orden, el publico comenzo a aplaudir.
+                Nunca antes un duende habia hecho algo tan valiente… ni tan loco.
             </p>
+            <br><br><br>
+            <a href="#cap3" class="siguiente">Siguiente</a>
+            <br><br><br>
+            <a href="#inicio" class="volver-arriba">Volver arriba</a>
             </p>
 
 
@@ -126,24 +237,30 @@
 
 
     </div>
-    <div style="margin-left: 400px; margin-right: 400px;padding-bottom: 10px; padding-top: 10px; background-color: black; color: azure;">
-    <h2 id="cap3">Desenlace</h2>
+    <div style="padding-top: 10px; padding-bottom: 10px;">
+        <h2 id="cap3">Desenlace</h2>
     </div>
     <div style="display: flex; margin-left: 400px; margin-right: 500px;">
         <img src="bin/desenlace.png">
         <div>
 
-            <p>El hechicero enemigo, obedeciendo al Rey Rojo, levantó su báculo y lanzó una bola de fuego directa hacia Grin.
-                El destello iluminó toda la arena. Cuando el humo se disipó, la corona dorada reposaba chamuscada en el suelo… y Grin había desaparecido.
+            <p>El hechicero enemigo, obedeciendo al Rey Rojo, levanto sus brazos y lanzó una bola de fuego directa hacia
+                Grin.
+                El destello ilumino toda la arena. Cuando el humo se disipo, la corona dorada reposaba chamuscada en el
+                suelo… y Grin habia desaparecido.
                 <br><br>
-                Durante semanas, nadie volvió a verlo. Los jugadores pensaron que había sido eliminado del juego. Pero un día, al actualizar el campo de batalla, algo cambió:
+                Durante semanas, nadie volvió a verlo. Los jugadores pensaron que había sido eliminado del juego. Pero
+                un día, al actualizar el campo de batalla, algo cambio:
                 los duendes ahora aparecían con una pequeña corona grabada en sus cascos.
                 <br><br>
-                Algunos decían que fue un error de programación. Otros, que fue una broma de los desarrolladores.
-                Pero los duendes sabían la verdad. Desde entonces, cada vez que uno salta al campo, se escucha una diminuta voz entre los gritos de guerra:
+                Algunos decian que fue un error de programacion. Otros, que fue una broma de los desarrolladores.
+                Pero los duendes sabian la verdad. Desde entonces, cada vez que uno salta al campo, se escucha una
+                diminuta voz entre los gritos de guerra:
 
                 <br><br>
-                <p style="margin-left: 20px;">“¡Nunca subestimes lo pequeño, porque puede cambiar la historia!”</p>
+            <p style="margin-left: 20px;">“¡Nunca subestimes lo pequeño, porque puede cambiar la historia!”</p>
+            <br><br><br>
+            <a href="#inicio" class="volver-arriba">Volver arriba</a>
             </p>
 
 
