@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario del grupo</title>
+
+    <style>
+
+        body{
+
+            background: linear-gradient(70deg, rgb(61, 253, 243), rgb(12, 16, 233));
+            background-attachment: fixed;
+
+        }
+
+        img {
+
+            width: 120px;
+            height: 120px;
+
+        }
+
+        table, th, td{
+
+            width: 1000px;
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse;
+            padding: 5px;
+            margin: 20px auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+            
+
+        }
+
+        table{
+
+            border: 10;
+
+        }
+
+        th{
+
+            background-color: aquamarine;
+
+        }
+
+        .programacion {
+
+            background-color: rgb(33, 207, 207);
+
+        }
+
+        .BD {
+
+            background-color: rgb(243, 137, 75);
+
+        }
+
+        .SI {
+
+            background-color: rgb(136, 243, 64);
+
+        }
+
+        .ED{
+
+            background-color: rgb(140, 87, 238);
+
+        }
+
+        .IPE{
+
+            background-color: rgb(240, 101, 136);
+
+        }
+
+        .Digi{
+
+            background-color: rgb(248, 14, 14);
+
+        }
+
+        .SOS{
+
+            background-color: rgb(241, 231, 80);
+
+        }
+
+        .LM{
+
+            background-color: rgb(2, 253, 57);
+
+        }
+
+        .hora{
+
+            background-color: rgb(233, 160, 71);
+
+        }
+
+        p{
+
+            margin: auto;
+            font-size: xx-large;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div style="display: flex;" >
+
+        <img src="bin/playamar.png">
+        <p><strong>I.E.S PLAYAMAR</strong></p>
+
+    </div>
+    <table>
+
+        <tr>
+
+            <th colspan="6" style="background-color: beige;">1ºDAW</th>
+
+        </tr>
+
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+
+        </tr>
+        <tr>
+
+            <td class="hora">15:15-16:15</td>
+            <td rowspan="3" class="BD">BD<br><div style="font-size: small;">Miguel Angel</div></td>
+            <td rowspan="3" class="IPE">IPE<br><div style="font-size: small;">Carlos</div></td>
+            <td class="Digi">Digitalización<br><div style="font-size: small;">Adolfo</div></td>
+            <td class="BD">BD<br><div style="font-size: small;">Miguel Angel</div></td>
+            <td rowspan="2" class="SI">SI<br><div style="font-size: small;">Alfonso</div></td>
+
+        </tr>
+        <tr>
+            
+            <td class="hora">16:15-17:15</td>
+            <td class="SOS">Sostenibilidad<br><div style="font-size: small;">Carlos</div></td>
+            <td rowspan="2" class="programacion">Programación<br><div style="font-size: small;">Rafa</div></td>
+
+        </tr>
+        <tr>
+
+            <td class="hora">17:15-18:15</td>
+            <td class="ED">Entornos de desarrollo<br><div style="font-size: small;">Pilar</div></td>
+            <td class="BD">BD<br><div style="font-size: small;">Miguel Angel</div></td>
+
+        </tr>
+        <tr>
+            <td class="hora">18:15-18:30</td>
+            <td colspan="5" style="text-align: center; background-color: brown;">RECREO</td>
+
+        </tr>
+        <tr>
+
+            <td class="hora">18:30-19:30</td>
+            <td rowspan="2" class="programacion">Programación<br><div style="font-size: small;">Rafa</div></td>
+            <td rowspan="3" class="SI">SI<br><div style="font-size: small;">Alfonso</div></td>
+            <td class="ED">Entorno de desarrollo<br><div style="font-size: small;">Pilar</div></td>
+            <td rowspan="3" class="LM">Lenguaje de marcas<br><div style="font-size: small;">Adolfo</div></td>
+            <td class="BD">BD<br><div style="font-size: small;">Miguel Angel</div></td>
+
+        </tr>
+        <tr>
+
+            <td class="hora">19:30-20:30</td>
+            <td rowspan="2" class="programacion">Programación<br><div style="font-size: small;">Rafa</div></td>
+            <td rowspan="2" class="programacion">Programación<br><div style="font-size: small;">Rafa</div></td>
+
+        </tr>
+        <tr>
+
+            <td class="hora">20:30-21:30</td>
+            <td class="ED">Entorno de desarrollo<br><div style="font-size: small;">Pilar</div></td>
+
+        </tr>
+
+
+
+
+
+
+    </table>
+
+    <h3 style="text-align: right;"><u>Titulo:</u> Horas del grupo<br>
+    <u>Autor:</u> David Calderón Navarro
+    
+    </h3>
+    
+</body>
+</html>
