@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+
+            text-align: center;
+            font-size: x-large;
+            background-color: rgb(27, 244, 252);
+
+        }
+
+        label{
+
+            padding: 10px;
+
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1>Solicitud de un curso</h1>
+
+    <div>
+    <form action="C:\Users\DAW1\Documents\Leguaje de marcas\Tema 1\Formulario\solicitudrecibida.html">
+        <label for="text">Nombre del solicitante:</label><br>
+        <input type="text" id="nombre" name="nombre" required maxlength="30" minlength="3" size="20"><br><br>
+        <label for="text">Dame tu edad:</label><br>
+        <input type="number" id="edad" name="edad" min="10" max="30" size="20"><br><br>
+        <label for="text">Escribe tu email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="curso">Curso</label>
+        <select id="curso" name="curso">
+            <option value="1ºDAW">1ºDAW</option>
+            <option value="1ºDAM">1ºDAM</option>
+            <option value="2ºDAW">2ºDAW</option>
+            <option value="2ºDAM">2ºDAM</option>
+        </select><br><br>
+        <label for="turno">Turno</label>
+        <select id="turno" name="turno">
+            <option value="Mañana">Mañana</option>
+            <option value="Tarde">Tarde</option>
+        </select>
+        <label for="sino">¿Necesita transporte?</label>
+        <select id="sino" name="sino">
+            <option value="1ºDAW">Si</option>
+            <option value="1ºDAM">No</option>
+        </select><br><br>
+
+
+
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+
+</body>
+
+</html>

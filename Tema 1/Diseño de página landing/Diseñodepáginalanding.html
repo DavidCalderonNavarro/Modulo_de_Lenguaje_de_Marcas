@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de producto</title>
+
+    <style>
+
+        #menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: lightgray;
+            padding: 10px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .textomenu{
+
+            margin-left: 250px;
+            text-decoration: none;
+
+        }
+
+        a{
+
+            text-decoration: none;
+
+        }
+
+        #hero {
+            height: 80vh;
+            background: #e3e9ff;
+            position: relative; 
+            margin-top: 50px;
+        }
+
+        #hero-texto {
+            position: absolute;
+            margin-top: 15%;
+            margin-left: 37%;
+            text-align: center;
+        }
+
+        #hero button {
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+
+        .caja {
+            float: left;
+            width: 28%;
+            margin: 1.5%;
+            background: #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .caja2 {
+            float: left;
+            width: 15%;
+            margin: 1.5%;
+            background: #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            clear: both;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        img{
+
+            width: 200px;
+            height: 100px;
+
+        }
+
+        .logo{
+
+            width: 50px;
+            height: 50px;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="menu">
+        <div class="logo">
+        <img src="bin/unnamed.jpg">
+        </div>
+        <div  class="textomenu">
+        <p>MENU <a href="#quees" class="caja2">Que es</a><a href="#quecon" class="caja2">Que contiene</a></p>
+        </div>
+    </div>
+
+    <section id="hero" id="logo">
+        <div id="hero-texto">
+            <h1>Compra nuestro Pass Royale</h1>
+            <img src="bin/Pass_Royale_Icon.webp"><br>
+            <button>Comprar ahora</button>
+        </div>
+    </section>
+
+    <div class="caja" id="quees">
+        
+        <p>¿Que es el pass royale?</p>
+        <p>
+            El Pass Royale es un pase de temporada que ofrece recompensas y ventajas exclusivas a los 
+            jugadores que lo compran, como progresión más rápida y contenido premium durante esa temporada.
+
+        </p>
+
+
+
+
+    </div>
+    <div class="caja" id="quecon">
+        
+        <p>¿Que trae el pass royale?</p>
+        <p>
+            Incluye cofres especiales, oro, objetos mágicos, aspectos de torre, emojis exclusivos, 
+            un camino de recompensas mejorado y beneficios como reinicios gratis de 
+            cofres coronas y colas de cofres según la temporada.
+
+
+
+        </p>
+
+
+    </div>
+    <div class="caja">Feature Box 3</div>
+
+    <footer>
+        Footer
+    </footer>
+
+</body>
+</html>
