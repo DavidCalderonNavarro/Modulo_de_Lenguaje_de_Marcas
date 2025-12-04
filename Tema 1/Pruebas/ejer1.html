@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Semántica de Ejemplo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, nav, section, article, aside, footer {
+            padding: 15px;
+            border: 1px solid #ccc;
+            margin: 5px;
+        }
+
+        main {
+            display: flex;
+        }
+
+        section {
+            flex: 3;
+        }
+
+        aside {
+            flex: 1;
+            background: #f7f7f7;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Página de Ejemplo con HTML Semántico</h1>
+        <p>Un ejemplo utilizando las etiquetas de la imagen.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Artículos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Sección Principal</h2>
+
+            <article>
+                <h3>Artículo 1</h3>
+                <p>Este es el contenido de un artículo dentro de la sección principal.</p>
+            </article>
+
+            <article>
+                <h3>Artículo 2</h3>
+                <p>Otro artículo independiente y autónomo dentro de la misma sección.</p>
+            </article>
+
+            <details>
+                <summary>Información adicional</summary>
+                <p>Este contenido se puede mostrar u ocultar a pedido del usuario.</p>
+            </details>
+        </section>
+
+        <aside>
+            <h2>Barra Lateral</h2>
+            <p>Contenido aparte del principal como enlaces, publicidad o información adicional.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2025 Mi página de ejemplo. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
