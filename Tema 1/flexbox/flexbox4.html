@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>flexbox4</title>
+
+<style>
+    .contenedor {
+        display: flex;
+        border: 4px solid red;
+        max-width: 900px;
+        margin: 30px auto;
+    }
+
+    .box {
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+   
+    .a {
+            background: #00a8e8;
+            padding: 20px;
+        }
+
+        .b {
+            background: #5e4fa2;
+            padding: 20px;
+        }
+
+        .c {
+            background: #ab47bc;
+            padding: 20px;
+        }
+
+        .d {
+            background: #324a5f;
+            padding: 20px;
+        }
+
+        .e {
+            background: #ffb300;
+            padding: 20px;
+        }
+
+        .f {
+            background: #ef5350;
+            padding: 20px;
+        }
+
+        .g {
+            background: #cfd8dc;
+            padding: 20px;
+        }
+
+        .h {
+            background: #66bb6a;
+            padding: 20px;
+        }
+
+        .i {
+            background: #26a69a;
+            padding: 20px;
+        }
+
+        .j {
+            background: #009688;
+            padding: 20px;
+        }
+
+    .box:nth-child(5) { order: -1; }
+    .box:nth-child(6) { order: 10; }
+
+</style>
+
+</head>
+<body>
+
+<div class="contenedor">
+    <div class="box a">1</div>
+    <div class="box b">2</div>
+    <div class="box c">3</div>
+    <div class="box d">4</div>
+    <div class="box e">5</div>
+    <div class="box f">6</div>
+    <div class="box g">7</div>
+    <div class="box h">8</div>
+    <div class="box i">9</div>
+    <div class="box j">10</div>
+</div>
+
+</body>
+</html>

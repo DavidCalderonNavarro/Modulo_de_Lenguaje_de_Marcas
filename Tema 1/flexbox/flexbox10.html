@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 10 – Flexbox</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: Arial;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 700px;
+            border: 4px solid red;
+            flex-direction: column;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .a {
+            background: #00b894;
+            height: 200px;
+        }
+        .b {
+            background: #0984e3;
+            height: 180px;
+        }
+        .c {
+            background: #6c5ce7;
+            height: 280px;
+        }
+        .d {
+            background: #2d3436;
+            height: 40px;
+        }
+
+        .e {
+            background: #fdcb6e;
+            height: 400px;
+        }
+        .f {
+            background: #e17055;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box a">Uno 🦁</div>
+        <div class="box b">Dos 😜</div>
+        <div class="box c">Tres 😴</div>
+        <div class="box d">Cuatro ⛱️</div>
+        <div class="box e">Cinco 🍕</div>
+        <div class="box f">Seis ☘️</div>
+    </div>
+
+</body>
+</html>

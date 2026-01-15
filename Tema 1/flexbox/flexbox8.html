@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flexbox8</title>
+
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 800px;
+            height: 350px;
+            border: 4px solid red;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            box-sizing: border-box;
+        }
+
+        
+        .box {
+            width: 80px;
+            height: 40px;
+            color: white;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* COLORES */
+        .a { 
+            background: #00b894; 
+        }
+        .b { 
+            background: #0984e3; 
+            height: 342px; 
+        }   
+        .c { 
+            background: #6c5ce7; 
+        }
+        .d { 
+            background: #2d3436; 
+        }
+        .e { 
+            background: #fdcb6e; 
+        }
+        .f { 
+            background: #e17055; 
+            align-self: center; 
+        }  
+        .g { 
+            background: #d63031; 
+        }
+        .h { 
+            background: #b2bec3; 
+        }
+        .i { 
+            background: #55efc4; 
+            align-self: flex-end; 
+        }
+        .j { 
+            background: #00b894; 
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box a">1</div>
+        <div class="box b">2</div>
+        <div class="box c">3</div>
+        <div class="box d">4</div>
+        <div class="box e">5</div>
+        <div class="box f">6</div>
+        <div class="box g">7</div>
+        <div class="box h">8</div>
+        <div class="box i">9</div>
+        <div class="box j">10</div>
+    </div>
+
+</body>
+
+</html>

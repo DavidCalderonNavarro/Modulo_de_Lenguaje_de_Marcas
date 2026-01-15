@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>flexbox3</title>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .contenedor {
+        width: 700px;
+        border: 4px solid red;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        flex-wrap: nowrap;
+        height: 40px;
+        width: 193px;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        color: white;
+        font-weight: bold;
+    }
+
+   .a {
+            background: #00a8e8;
+            padding: 20px;
+        }
+
+        .b {
+            background: #5e4fa2;
+            padding: 20px;
+        }
+
+        .c {
+            background: #ab47bc;
+            padding: 20px;
+        }
+
+        .d {
+            background: #324a5f;
+            padding: 20px;
+        }
+
+        .e {
+            background: #ffb300;
+            padding: 20px;
+        }
+
+        .f {
+            background: #ef5350;
+            padding: 20px;
+        }
+
+        .g {
+            background: #cfd8dc;
+            padding: 20px;
+        }
+
+        .h {
+            background: #66bb6a;
+            padding: 20px;
+        }
+
+        .i {
+            background: #26a69a;
+            padding: 20px;
+        }
+
+        .j {
+            background: #009688;
+            padding: 20px;
+        }
+
+    
+    .fila-final {
+        flex: 1 0 50%;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <div class="box a">1</div>
+    <div class="box b">2</div>
+    <div class="box c">3</div>
+
+    <div class="box d">4</div>
+    <div class="box e">5</div>
+    <div class="box f">6</div>
+
+    <div class="box g">7</div>
+    <div class="box h">8</div>
+    <div class="box i">9</div>
+
+    <div class="box j">10</div>
+    <div class="box fila-final" style="background:white;"></div>
+
+</div>
+
+</body>
+</html>
